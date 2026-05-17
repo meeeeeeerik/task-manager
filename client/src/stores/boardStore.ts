@@ -164,18 +164,18 @@ class BoardStore {
 
   // ── Checklist ────────────────────────────────────────────
   toggleChecklist = async (taskId: string, itemId: string) => {
-    await tasksApi.toggleChecklist(taskId, itemId);
     runInAction(() => {
-      const updateTask = (task: Task) => {
+      const toggle = (task: Task) => {
         const item = task.checklist.find((c) => c.id === itemId);
         if (item) item.done = !item.done;
       };
-      if (this.selectedTask?.id === taskId) updateTask(this.selectedTask);
+      if (this.selectedTask?.id === taskId) toggle(this.selectedTask);
       this.activeBoard?.columns.forEach((col) => {
         const task = col.tasks.find((t) => t.id === taskId);
-        if (task) updateTask(task);
+        if (task) toggle(task);
       });
     });
+    await tasksApi.toggleChecklist(taskId, itemId);
   };
 
   // ── Computed ─────────────────────────────────────────────
