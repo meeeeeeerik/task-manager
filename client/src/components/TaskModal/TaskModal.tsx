@@ -39,6 +39,8 @@ const TaskModal = observer(function TaskModal() {
   const dark = themeStore.isDark;
   const [comment, setComment] = useState('');
   const [newCheckItem, setNewCheckItem] = useState('');
+  const [titleDraft, setTitleDraft] = useState(task?.title ?? '');
+  const [descDraft, setDescDraft] = useState(task?.description ?? '');
 
   if (!task) return null;
 
@@ -86,8 +88,9 @@ const TaskModal = observer(function TaskModal() {
           <TextField
             fullWidth
             variant="standard"
-            value={task.title}
-            onChange={(e) => handleUpdate('title', e.target.value)}
+            value={titleDraft}
+            onChange={(e) => setTitleDraft(e.target.value)}
+            onBlur={() => { if (titleDraft.trim() && titleDraft !== task.title) handleUpdate('title', titleDraft.trim()); }}
             inputProps={{ style: { fontSize: 18, fontWeight: 800 } }}
             sx={{
               '& .MuiInput-underline:before': { borderBottom: 'none' },
@@ -117,8 +120,9 @@ const TaskModal = observer(function TaskModal() {
               multiline
               rows={3}
               placeholder="Add a description..."
-              value={task.description}
-              onChange={(e) => handleUpdate('description', e.target.value)}
+              value={descDraft}
+              onChange={(e) => setDescDraft(e.target.value)}
+              onBlur={() => { if (descDraft !== task.description) handleUpdate('description', descDraft); }}
               variant="outlined"
               size="small"
               label="Description"
