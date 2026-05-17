@@ -2,6 +2,8 @@
 
 Full-stack Trello-like task manager with React + MobX frontend and Node.js + Express backend.
 
+🚀 **Live demo:** [task-manager-app-project-by-merdan.netlify.app](https://task-manager-app-project-by-merdan.netlify.app/)
+
 ## 📁 Structure
 
 ```
@@ -47,28 +49,28 @@ Demo accounts (password: **`password`**): `alex@demo.com` · `sarah@demo.com` ·
 
 ## 🛠️ Backend Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /api/auth/register | Register |
-| POST | /api/auth/login | Login |
-| GET | /api/boards | My boards |
-| POST | /api/boards | Create board |
-| GET | /api/boards/:id | Full board data |
-| POST | /api/boards/:id/columns | Add column |
-| DELETE | /api/boards/:id/columns/:colId | Delete column |
-| PATCH | /api/boards/:id/move | Move task (drag&drop) |
-| POST | /api/tasks | Create task |
-| PATCH | /api/tasks/:id | Update task |
-| DELETE | /api/tasks/:id | Delete task |
-| POST | /api/tasks/:id/comments | Add comment |
-| PATCH | /api/tasks/:id/checklist/:itemId | Toggle checkbox |
+| Method | Endpoint                         | Description           |
+| ------ | -------------------------------- | --------------------- |
+| POST   | /api/auth/register               | Register              |
+| POST   | /api/auth/login                  | Login                 |
+| GET    | /api/boards                      | My boards             |
+| POST   | /api/boards                      | Create board          |
+| GET    | /api/boards/:id                  | Full board data       |
+| POST   | /api/boards/:id/columns          | Add column            |
+| DELETE | /api/boards/:id/columns/:colId   | Delete column         |
+| PATCH  | /api/boards/:id/move             | Move task (drag&drop) |
+| POST   | /api/tasks                       | Create task           |
+| PATCH  | /api/tasks/:id                   | Update task           |
+| DELETE | /api/tasks/:id                   | Delete task           |
+| POST   | /api/tasks/:id/comments          | Add comment           |
+| PATCH  | /api/tasks/:id/checklist/:itemId | Toggle checkbox       |
 
 ---
 
 ## 🧠 MobX Stores
 
-| Store | Handles |
-|-------|---------|
+| Store        | Handles                                    |
+| ------------ | ------------------------------------------ |
 | `boardStore` | Boards, columns, tasks, drag&drop, filters |
-| `authStore` | Login, register, JWT |
-| `themeStore` | Dark/Light mode |
+| `authStore`  | Login, register, JWT                       |
+| `themeStore` | Dark/Light mode                            |
