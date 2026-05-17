@@ -1,0 +1,638 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Alex Johnson",
+      "email": "alex@demo.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "avatar": "https://i.pravatar.cc/150?img=11",
+      "color": "#1976D2"
+    },
+    {
+      "id": "u2",
+      "name": "Sarah Chen",
+      "email": "sarah@demo.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "avatar": "https://i.pravatar.cc/150?img=47",
+      "color": "#E91E63"
+    },
+    {
+      "id": "u3",
+      "name": "Marcus Rivera",
+      "email": "marcus@demo.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "avatar": "https://i.pravatar.cc/150?img=68",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "658f53c6-a150-43e6-a5dc-ed2487e13262",
+      "name": "Merdan Reyimov",
+      "email": "merikreyimov@gmail.com",
+      "password": "$2a$10$i6Qqpp7g1lL..zFAfzj1se71IlbtGsvuoexqn5YPKQAXXPfv/Nj5y",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=merikreyimov@gmail.com",
+      "color": "#FF9800"
+    }
+  ],
+  "boards": [
+    {
+      "id": "b1",
+      "title": "Product Roadmap",
+      "description": "Q1 2025 product development tasks",
+      "color": "#1976D2",
+      "ownerId": "u1",
+      "members": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "columnOrder": [
+        "col1",
+        "col2",
+        "col3",
+        "col4"
+      ],
+      "createdAt": "2024-12-01T10:00:00Z"
+    },
+    {
+      "id": "b2",
+      "title": "Marketing Campaign",
+      "description": "Spring 2025 campaign planning",
+      "color": "#E91E63",
+      "ownerId": "u2",
+      "members": [
+        "u1",
+        "u2",
+        "658f53c6-a150-43e6-a5dc-ed2487e13262"
+      ],
+      "columnOrder": [
+        "col5",
+        "col6",
+        "col7",
+        "ac9a6a02-e6f8-4d16-965b-c822db5ea24c",
+        "9dee2859-f6e9-49bf-a915-1b47a76d760a"
+      ],
+      "createdAt": "2024-12-05T09:00:00Z"
+    },
+    {
+      "id": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "Задачи",
+      "description": "Описания\n",
+      "color": "#2196F3",
+      "ownerId": "658f53c6-a150-43e6-a5dc-ed2487e13262",
+      "members": [
+        "658f53c6-a150-43e6-a5dc-ed2487e13262"
+      ],
+      "columnOrder": [
+        "06b66a2e-d290-4cad-86b4-0649a9a68794",
+        "900f25f4-fc83-4947-9e74-f932b55975ba",
+        "b9d6b8f1-950b-470a-8645-24f32ebe67f7",
+        "d8e38917-bb67-4fa9-b526-c5bcc022db88",
+        "202be720-9a57-477d-983d-6026e2243572"
+      ],
+      "createdAt": "2026-05-11T21:33:47.605Z"
+    }
+  ],
+  "invitations": [
+    {
+      "id": "f5feb092-771f-4f25-8d23-9899b5be0417",
+      "boardId": "b2",
+      "boardTitle": "Marketing Campaign",
+      "boardColor": "#E91E63",
+      "fromUserId": "u1",
+      "fromUserName": "Alex Johnson",
+      "toEmail": "merikreyimov@gmail.com",
+      "toUserId": "658f53c6-a150-43e6-a5dc-ed2487e13262",
+      "status": "accepted",
+      "createdAt": "2026-05-11T21:42:26.308Z"
+    }
+  ],
+  "columns": [
+    {
+      "id": "col1",
+      "boardId": "b1",
+      "title": "Backlog",
+      "taskIds": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "color": "#757575"
+    },
+    {
+      "id": "col2",
+      "boardId": "b1",
+      "title": "In Progress",
+      "taskIds": [
+        "t4",
+        "t5"
+      ],
+      "color": "#1976D2"
+    },
+    {
+      "id": "col3",
+      "boardId": "b1",
+      "title": "Review",
+      "taskIds": [
+        "t6"
+      ],
+      "color": "#FF9800"
+    },
+    {
+      "id": "col4",
+      "boardId": "b1",
+      "title": "Done",
+      "taskIds": [
+        "t7",
+        "t8"
+      ],
+      "color": "#4CAF50"
+    },
+    {
+      "id": "col5",
+      "boardId": "b2",
+      "title": "Ideas",
+      "taskIds": [
+        "t9",
+        "t10",
+        "85842734-9964-41e4-a478-ae38372c2c6b"
+      ],
+      "color": "#9C27B0"
+    },
+    {
+      "id": "col6",
+      "boardId": "b2",
+      "title": "In Progress",
+      "taskIds": [
+        "t11"
+      ],
+      "color": "#1976D2"
+    },
+    {
+      "id": "col7",
+      "boardId": "b2",
+      "title": "Completed",
+      "taskIds": [],
+      "color": "#4CAF50"
+    },
+    {
+      "id": "06b66a2e-d290-4cad-86b4-0649a9a68794",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "Backlog",
+      "taskIds": [
+        "3c466a9b-0707-40e0-b21c-9231375ab4c9"
+      ],
+      "color": "#757575"
+    },
+    {
+      "id": "900f25f4-fc83-4947-9e74-f932b55975ba",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "In Progress",
+      "taskIds": [
+        "402098b8-4e07-4349-815b-a87b319b9d1e"
+      ],
+      "color": "#757575"
+    },
+    {
+      "id": "b9d6b8f1-950b-470a-8645-24f32ebe67f7",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "Review",
+      "taskIds": [
+        "38db8ee7-31ec-4edc-ada5-8549671dcc5a"
+      ],
+      "color": "#757575"
+    },
+    {
+      "id": "d8e38917-bb67-4fa9-b526-c5bcc022db88",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "Done",
+      "taskIds": [
+        "96521fa1-b109-49c5-9222-16f906847f46"
+      ],
+      "color": "#757575"
+    },
+    {
+      "id": "202be720-9a57-477d-983d-6026e2243572",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "цуаывфч",
+      "taskIds": [],
+      "color": "#5C6BC0"
+    },
+    {
+      "id": "ac9a6a02-e6f8-4d16-965b-c822db5ea24c",
+      "boardId": "b2",
+      "title": "ява",
+      "taskIds": [],
+      "color": "#5C6BC0"
+    },
+    {
+      "id": "9dee2859-f6e9-49bf-a915-1b47a76d760a",
+      "boardId": "b2",
+      "title": "ывап",
+      "taskIds": [],
+      "color": "#5C6BC0"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "columnId": "col1",
+      "boardId": "b1",
+      "title": "Design new dashboard UI",
+      "description": "Create wireframes and high-fidelity mockups for the new analytics dashboard.",
+      "priority": "high",
+      "label": "design",
+      "assigneeIds": [
+        "u2"
+      ],
+      "dueDate": "2025-01-20",
+      "checklist": [
+        {
+          "id": "ch1",
+          "text": "Create wireframes",
+          "done": true
+        },
+        {
+          "id": "ch2",
+          "text": "Design components",
+          "done": false
+        },
+        {
+          "id": "ch3",
+          "text": "Get stakeholder approval",
+          "done": false
+        }
+      ],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2024-12-10T10:00:00Z"
+    },
+    {
+      "id": "t2",
+      "columnId": "col1",
+      "boardId": "b1",
+      "title": "Set up CI/CD pipeline",
+      "description": "Configure GitHub Actions for automated testing and deployment.",
+      "priority": "medium",
+      "label": "devops",
+      "assigneeIds": [
+        "u1"
+      ],
+      "dueDate": "2025-01-15",
+      "checklist": [
+        {
+          "id": "ch4",
+          "text": "Set up GitHub Actions",
+          "done": false
+        },
+        {
+          "id": "ch5",
+          "text": "Configure staging environment",
+          "done": false
+        }
+      ],
+      "comments": [],
+      "attachments": 2,
+      "createdAt": "2024-12-11T09:00:00Z"
+    },
+    {
+      "id": "t3",
+      "columnId": "col1",
+      "boardId": "b1",
+      "title": "Write API documentation",
+      "description": "Document all REST endpoints using OpenAPI spec.",
+      "priority": "low",
+      "label": "docs",
+      "assigneeIds": [
+        "u3"
+      ],
+      "dueDate": "2025-01-25",
+      "checklist": [],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2024-12-12T11:00:00Z"
+    },
+    {
+      "id": "t4",
+      "columnId": "col2",
+      "boardId": "b1",
+      "title": "Implement user authentication",
+      "description": "Build JWT-based auth with refresh tokens.",
+      "priority": "high",
+      "label": "feature",
+      "assigneeIds": [
+        "u1",
+        "u2"
+      ],
+      "dueDate": "2025-01-10",
+      "checklist": [
+        {
+          "id": "ch6",
+          "text": "Login endpoint",
+          "done": true
+        },
+        {
+          "id": "ch7",
+          "text": "Register endpoint",
+          "done": true
+        },
+        {
+          "id": "ch8",
+          "text": "Refresh token logic",
+          "done": false
+        }
+      ],
+      "comments": [
+        {
+          "id": "cm1",
+          "authorId": "u2",
+          "text": "Almost done! Just the refresh token left.",
+          "createdAt": "2024-12-17T14:00:00Z"
+        }
+      ],
+      "attachments": 1,
+      "createdAt": "2024-12-08T08:00:00Z"
+    },
+    {
+      "id": "t5",
+      "columnId": "col2",
+      "boardId": "b1",
+      "title": "Build notification system",
+      "description": "Real-time notifications using WebSockets.",
+      "priority": "medium",
+      "label": "feature",
+      "assigneeIds": [
+        "u3"
+      ],
+      "dueDate": "2025-01-18",
+      "checklist": [
+        {
+          "id": "ch9",
+          "text": "WebSocket setup",
+          "done": false
+        },
+        {
+          "id": "ch10",
+          "text": "Notification UI",
+          "done": false
+        }
+      ],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2024-12-13T10:00:00Z"
+    },
+    {
+      "id": "t6",
+      "columnId": "col3",
+      "boardId": "b1",
+      "title": "Performance optimization",
+      "description": "Reduce bundle size and improve load time.",
+      "priority": "high",
+      "label": "bug",
+      "assigneeIds": [
+        "u1"
+      ],
+      "dueDate": "2025-01-08",
+      "checklist": [
+        {
+          "id": "ch11",
+          "text": "Analyze bundle",
+          "done": true
+        },
+        {
+          "id": "ch12",
+          "text": "Implement lazy loading",
+          "done": true
+        },
+        {
+          "id": "ch13",
+          "text": "Code review",
+          "done": false
+        }
+      ],
+      "comments": [],
+      "attachments": 3,
+      "createdAt": "2024-12-07T09:00:00Z"
+    },
+    {
+      "id": "t7",
+      "columnId": "col4",
+      "boardId": "b1",
+      "title": "Setup project repository",
+      "description": "Initialize Git repo and configure branch protection.",
+      "priority": "low",
+      "label": "devops",
+      "assigneeIds": [
+        "u1"
+      ],
+      "dueDate": "2024-12-15",
+      "checklist": [
+        {
+          "id": "ch14",
+          "text": "Create repository",
+          "done": true
+        },
+        {
+          "id": "ch15",
+          "text": "Branch protection rules",
+          "done": true
+        }
+      ],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2024-12-01T08:00:00Z"
+    },
+    {
+      "id": "t8",
+      "columnId": "col4",
+      "boardId": "b1",
+      "title": "Define project requirements",
+      "description": "Document all functional and non-functional requirements.",
+      "priority": "high",
+      "label": "docs",
+      "assigneeIds": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "dueDate": "2024-12-10",
+      "checklist": [
+        {
+          "id": "ch16",
+          "text": "Write PRD",
+          "done": true
+        }
+      ],
+      "comments": [],
+      "attachments": 1,
+      "createdAt": "2024-12-01T09:00:00Z"
+    },
+    {
+      "id": "t9",
+      "columnId": "col5",
+      "boardId": "b2",
+      "title": "Social media content calendar",
+      "description": "Plan 3-month content calendar for all social channels.",
+      "priority": "medium",
+      "label": "marketing",
+      "assigneeIds": [
+        "u2"
+      ],
+      "dueDate": "2025-01-30",
+      "checklist": [],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2024-12-05T10:00:00Z"
+    },
+    {
+      "id": "t10",
+      "columnId": "col5",
+      "boardId": "b2",
+      "title": "Influencer outreach strategy",
+      "description": "Identify and contact relevant influencers.",
+      "priority": "high",
+      "label": "marketing",
+      "assigneeIds": [
+        "u1",
+        "u2"
+      ],
+      "dueDate": "2025-01-15",
+      "checklist": [],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2024-12-06T11:00:00Z"
+    },
+    {
+      "id": "t11",
+      "columnId": "col6",
+      "boardId": "b2",
+      "title": "Email campaign design",
+      "description": "Design HTML email templates for the spring campaign.",
+      "priority": "high",
+      "label": "design",
+      "assigneeIds": [
+        "u2"
+      ],
+      "dueDate": "2025-01-12",
+      "checklist": [
+        {
+          "id": "ch17",
+          "text": "Header design",
+          "done": true
+        },
+        {
+          "id": "ch18",
+          "text": "Mobile optimization",
+          "done": true
+        }
+      ],
+      "comments": [],
+      "attachments": 2,
+      "createdAt": "2024-12-07T10:00:00Z"
+    },
+    {
+      "id": "38db8ee7-31ec-4edc-ada5-8549671dcc5a",
+      "columnId": "b9d6b8f1-950b-470a-8645-24f32ebe67f7",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "ыфва",
+      "description": "",
+      "priority": "medium",
+      "label": "",
+      "assigneeIds": [],
+      "dueDate": "",
+      "checklist": [],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2026-05-11T21:34:03.976Z"
+    },
+    {
+      "id": "402098b8-4e07-4349-815b-a87b319b9d1e",
+      "columnId": "900f25f4-fc83-4947-9e74-f932b55975ba",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "прти",
+      "description": "",
+      "priority": "medium",
+      "label": "",
+      "assigneeIds": [],
+      "dueDate": "",
+      "checklist": [],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2026-05-11T21:34:06.725Z"
+    },
+    {
+      "id": "3c466a9b-0707-40e0-b21c-9231375ab4c9",
+      "columnId": "06b66a2e-d290-4cad-86b4-0649a9a68794",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "пртие",
+      "description": "",
+      "priority": "medium",
+      "label": "bug",
+      "assigneeIds": [
+        "658f53c6-a150-43e6-a5dc-ed2487e13262"
+      ],
+      "dueDate": "",
+      "checklist": [
+        {
+          "id": "ch-1778536956074",
+          "text": "ЫВА",
+          "done": false
+        }
+      ],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2026-05-11T21:34:07.683Z"
+    },
+    {
+      "id": "96521fa1-b109-49c5-9222-16f906847f46",
+      "columnId": "d8e38917-bb67-4fa9-b526-c5bcc022db88",
+      "boardId": "269e8d95-ea59-4b51-a8d6-aa3157ef1dac",
+      "title": "ЦУАЫВ",
+      "description": "",
+      "priority": "medium",
+      "label": "",
+      "assigneeIds": [],
+      "dueDate": "",
+      "checklist": [],
+      "comments": [],
+      "attachments": 0,
+      "createdAt": "2026-05-11T21:34:09.354Z"
+    },
+    {
+      "id": "85842734-9964-41e4-a478-ae38372c2c6b",
+      "columnId": "col5",
+      "boardId": "b2",
+      "title": "ыва",
+      "description": "а",
+      "priority": "urgent",
+      "label": "",
+      "assigneeIds": [
+        "658f53c6-a150-43e6-a5dc-ed2487e13262",
+        "u2",
+        "u1"
+      ],
+      "dueDate": "2026-05-15",
+      "checklist": [
+        {
+          "id": "ch-1778536163217",
+          "text": "фыва",
+          "done": false
+        },
+        {
+          "id": "ch-1778536165732",
+          "text": "ыфва",
+          "done": false
+        }
+      ],
+      "comments": [
+        {
+          "id": "56acdd0f-aaae-4390-9f8b-c9ca7ace111c",
+          "authorId": "658f53c6-a150-43e6-a5dc-ed2487e13262",
+          "text": "фыва",
+          "createdAt": "2026-05-11T21:49:28.396Z"
+        }
+      ],
+      "attachments": 0,
+      "createdAt": "2026-05-11T21:49:13.735Z"
+    }
+  ]
+}
