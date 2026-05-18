@@ -76,6 +76,10 @@ router.patch("/:id", authMiddleware, (req, res) => {
     assignees: task.assigneeIds
       .map((id) => sanitizeUser(db.users.find((u) => u.id === id)))
       .filter(Boolean),
+    comments: task.comments.map((c) => ({
+      ...c,
+      author: sanitizeUser(db.users.find((u) => u.id === c.authorId)),
+    })),
   });
 });
 

@@ -164,18 +164,26 @@ class BoardStore {
 
   // ── Checklist ────────────────────────────────────────────
   toggleChecklist = async (taskId: string, itemId: string) => {
-    runInAction(() => {
-      const toggle = (task: Task) => {
-        const item = task.checklist.find((c) => c.id === itemId);
-        if (item) item.done = !item.done;
-      };
-      if (this.selectedTask?.id === taskId) toggle(this.selectedTask);
-      this.activeBoard?.columns.forEach((col) => {
-        const task = col.tasks.find((t) => t.id === taskId);
-        if (task) toggle(task);
+    const applyToggle = () => {
+      runInAction(() => {
+        const toggle = (task: Task) => {
+          const item = task.checklist.find((c) => c.id === itemId);
+          if (item) item.done = !item.done;
+        };
+        if (this.selectedTask?.id === taskId) toggle(this.selectedTask);
+        this.activeBoard?.columns.forEach((col) => {
+          const task = col.tasks.find((t) => t.id === taskId);
+          if (task) toggle(task);
+        });
       });
-    });
-    await tasksApi.toggleChecklist(taskId, itemId);
+    };
+
+    applyToggle();
+    try {
+      await tasksApi.toggleChecklist(taskId, itemId);
+    } catch {
+      applyToggle(); // revert on failure
+    }
   };
 
   // ── Computed ─────────────────────────────────────────────
